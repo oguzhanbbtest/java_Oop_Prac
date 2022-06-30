@@ -19,4 +19,8 @@ public class GuvenlikGorevlisi extends Memur{
     public void nobet(){
         System.out.println(getAdSoyad()+" Nöbette ...!!");
     }
+    @Override
+    public void calis(String calismaSaati){
+        System.out.println(getAdSoyad()+" çalışma saatleri :" + calismaSaati);
+    }
 }

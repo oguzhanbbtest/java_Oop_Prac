@@ -21,4 +21,13 @@ public class OgretimGorevlisi extends Akademisyen{
     public void sinavYap(){
 
     }
+    @Override
+    public void giris(){
+        System.out.println(this.getAdSoyad()+" ogretimgorevlisi D kapisindan giris yapti");
+    }
+    @Override
+    public void derseGir(String saat){
+        System.out.println(this.getAdSoyad()+" Derse "+saat+" giriş yaptı ");
+
+    }
 }

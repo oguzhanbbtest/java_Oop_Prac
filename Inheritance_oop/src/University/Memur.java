@@ -1,5 +1,5 @@
 package University;
-public class Memur extends Calisan{
+public abstract class Memur extends Calisan{
     private String departman;
     private String mesai;
 
@@ -25,8 +25,20 @@ public class Memur extends Calisan{
         this.mesai = mesai;
     }
 
-    public void calis()
-    {
-        System.out.println(this.getAdSoyad()+" görevlerini yapıyor");
+    public abstract void calis(String calismaSaati);
+
+    @Override
+    public void giris() {
+        System.out.println(getAdSoyad()+" Memuru B kapisindan giris yapti");
+    }
+
+    @Override
+    public void cikis() {
+        System.out.println(getAdSoyad()+" Memuru B kapisindan giris yapti");
+
+    }
+    @Override
+    public void yemekhane() {
+        super.yemekhane();
     }
 }

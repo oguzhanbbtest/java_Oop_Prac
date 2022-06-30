@@ -19,4 +19,9 @@ public class BilgiIslem extends Memur{
     public  void networkKurulumu(){
         System.out.println(getAdSoyad()+" "+getDepartman()+" departmanina network kurdu");
     }
+
+    @Override
+    public void calis(String calismaSaati) {
+        System.out.println(getAdSoyad()+" calisma saati : "+calismaSaati);
+    }
 }
